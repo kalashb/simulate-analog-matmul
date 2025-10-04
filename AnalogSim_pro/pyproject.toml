@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analogsim"
+version = "0.0.1"
+description = "Differentiable analog matrix-multiply simulator for ML research"
+authors = [{name = "Kalash Bhaiya"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0"]
+
+
+[project.scripts]
+analogsim = "analogsim.cli:main"
